@@ -49,6 +49,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: var(--primary-color);
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -385,7 +386,8 @@ footer p {
 
 @media (max-width: 480px) {
     .nav-links {
-        display: none;
+        gap: 0.5rem;
+        font-size: 0.9rem;
     }
 
     .hero {
