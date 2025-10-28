@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="flameGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f7931e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="url(#flameGradient)"/>
+  <path d="M50 20 C40 30, 40 40, 50 50 C60 40, 60 30, 50 20 Z M50 35 C45 42, 45 48, 50 55 C55 48, 55 42, 50 35 Z" fill="#fff" opacity="0.9"/>
+  <path d="M50 45 C47 50, 47 54, 50 60 C53 54, 53 50, 50 45 Z" fill="#fff" opacity="0.7"/>
+</svg>
