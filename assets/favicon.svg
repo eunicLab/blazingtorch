@@ -1,11 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
-    <linearGradient id="flameGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#f7931e;stop-opacity:1" />
+    <linearGradient id="flameGradient1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#f7931e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff3d00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="flameGradient2" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffa726;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="yellowHighlight" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffeb3b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffc107;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <circle cx="50" cy="50" r="48" fill="url(#flameGradient)"/>
-  <path d="M50 20 C40 30, 40 40, 50 50 C60 40, 60 30, 50 20 Z M50 35 C45 42, 45 48, 50 55 C55 48, 55 42, 50 35 Z" fill="#fff" opacity="0.9"/>
-  <path d="M50 45 C47 50, 47 54, 50 60 C53 54, 53 50, 50 45 Z" fill="#fff" opacity="0.7"/>
+  
+  <!-- Main flame element (right) -->
+  <path d="M 65 85 Q 60 70, 62 55 Q 64 40, 70 28 Q 75 18, 78 12 Q 80 8, 82 15 Q 83 20, 80 30 Q 78 38, 75 48 Q 72 58, 70 68 Q 68 78, 65 85 Z" fill="url(#flameGradient1)"/>
+  
+  <!-- Secondary flame element (left) -->
+  <path d="M 35 85 Q 38 75, 40 62 Q 42 50, 45 38 Q 48 26, 52 18 Q 54 14, 55 20 Q 56 28, 54 38 Q 52 48, 50 58 Q 48 68, 45 78 Q 42 82, 35 85 Z" fill="url(#flameGradient1)"/>
+  
+  <!-- Center flame accent -->
+  <path d="M 50 85 Q 48 72, 50 58 Q 52 45, 56 35 Q 58 28, 60 25 Q 61 23, 61 28 Q 61 35, 59 45 Q 57 55, 55 65 Q 53 75, 50 85 Z" fill="url(#flameGradient2)"/>
+  
+  <!-- Yellow/white highlights -->
+  <path d="M 45 75 Q 47 65, 49 55 Q 50 48, 52 42 Q 53 38, 54 40 Q 54 45, 52 52 Q 50 60, 48 68 Q 47 72, 45 75 Z" fill="url(#yellowHighlight)" opacity="0.8"/>
+  
+  <!-- White accent highlights -->
+  <ellipse cx="55" cy="45" rx="3" ry="8" fill="#ffffff" opacity="0.6" transform="rotate(-15 55 45)"/>
+  <ellipse cx="48" cy="52" rx="2" ry="6" fill="#ffffff" opacity="0.5" transform="rotate(-20 48 52)"/>
+  <ellipse cx="68" cy="40" rx="3" ry="7" fill="#ffffff" opacity="0.5" transform="rotate(-10 68 40)"/>
 </svg>
