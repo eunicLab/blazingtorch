@@ -358,25 +358,7 @@ nav {
 .connect-subtitle {
     font-size: 1.1rem;
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-}
-
-.email-contact {
-    font-size: 1.1rem;
-    color: var(--text-secondary);
-    margin-bottom: 2rem;
-}
-
-.email-contact a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.email-contact a:hover {
-    color: var(--secondary-color);
-    text-decoration: underline;
+    margin-bottom: 3rem;
 }
 
 .social-links {
