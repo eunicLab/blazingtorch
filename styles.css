@@ -358,7 +358,25 @@ nav {
 .connect-subtitle {
     font-size: 1.1rem;
     color: var(--text-secondary);
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.email-contact {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.email-contact a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.email-contact a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 
 .social-links {
@@ -443,6 +461,19 @@ footer {
 
 footer p {
     opacity: 0.8;
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: var(--footer-text);
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+    opacity: 1;
+    text-decoration: underline;
 }
 
 /* Animations */
