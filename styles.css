@@ -53,8 +53,8 @@ nav {
 }
 
 .logo-icon {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
 }
 
@@ -357,8 +357,8 @@ footer p {
 /* Responsive Design */
 @media (max-width: 768px) {
     .logo-icon {
-        width: 48px;
-        height: 48px;
+        width: 64px;
+        height: 64px;
     }
 
     .logo-text {
@@ -407,8 +407,8 @@ footer p {
 
 @media (max-width: 480px) {
     .logo-icon {
-        width: 42px;
-        height: 42px;
+        width: 56px;
+        height: 56px;
     }
 
     .logo-text {
