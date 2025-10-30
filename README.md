@@ -21,7 +21,7 @@ Blazing Torch creates engaging video content on YouTube, TikTok, Instagram, and 
 
 - `index.html` - Main website structure
 - `styles.css` - Styling and responsive design
-- `favicon.svg` - Blazing Torch flame icon
+
 
 ## Viewing the Website
 
