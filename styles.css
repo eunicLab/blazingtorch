@@ -55,6 +55,8 @@ nav {
 .logo-icon {
     width: 40px;
     height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .logo-text {
@@ -99,6 +101,8 @@ nav {
     margin-bottom: 2rem;
     animation: fadeInUp 1s ease;
     filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+    border-radius: 20px;
+    object-fit: cover;
 }
 
 .hero-content h1 {
