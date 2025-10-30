@@ -154,15 +154,21 @@
         const themeIconDark = document.getElementById('theme-icon-dark');
         const html = document.documentElement;
 
+        // Function to update theme icons
+        function updateThemeIcon(theme) {
+            if (theme === 'dark') {
+                themeIconLight.style.display = 'none';
+                themeIconDark.style.display = 'block';
+            } else {
+                themeIconLight.style.display = 'block';
+                themeIconDark.style.display = 'none';
+            }
+        }
+
         // Check for saved theme preference or default to 'light' mode
         const currentTheme = localStorage.getItem('theme') || 'light';
         html.setAttribute('data-theme', currentTheme);
-        
-        // Update icon based on current theme
-        if (currentTheme === 'dark') {
-            themeIconLight.style.display = 'none';
-            themeIconDark.style.display = 'block';
-        }
+        updateThemeIcon(currentTheme);
 
         // Toggle theme when button is clicked
         themeToggle.addEventListener('click', () => {
@@ -171,15 +177,7 @@
             
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
-            
-            // Toggle icons
-            if (newTheme === 'dark') {
-                themeIconLight.style.display = 'none';
-                themeIconDark.style.display = 'block';
-            } else {
-                themeIconLight.style.display = 'block';
-                themeIconDark.style.display = 'none';
-            }
+            updateThemeIcon(newTheme);
         });
     </script>
 </body>
